@@ -7,6 +7,7 @@ import WorkoutForm from "./components/WorkoutForm";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import { useAuthContext } from "./hooks/useAuthContext";
+import axios from "axios";
 
 function App() {
   const { user } = useAuthContext();
