@@ -10,6 +10,7 @@ import { useAuthContext } from "./hooks/useAuthContext";
 
 function App() {
   const { user } = useAuthContext();
+  axios.defaults.withCredentials = true;
   return (
     <>
       <BrowserRouter>
