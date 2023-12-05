@@ -8,6 +8,7 @@ export function useLogin() {
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(null);
   const { dispatch } = useAuthContext();
+  axios.defaults.withCredentials = true;
 
   async function login(email, password) {
     setIsLoading(true);
